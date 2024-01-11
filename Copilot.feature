@@ -4,7 +4,7 @@ Feature: Search information with copilot on bing.com
         Given User is on the bing.com homepage
         When User clicks on chat icon
         Then User is redirected to page with chatting window 
-        And User clicks <Conversation> button to chose response style 
+        When User clicks <Conversation> button to chose response style 
         And User input in chat window "Prowly Media Monitoring information"
         Then User get response with information in <Conversation> style
         And response is about "Prowly Media Monitoring"
